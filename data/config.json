@@ -1,0 +1,62 @@
+{
+  "site": {
+    "title": "我的数字作品",
+    "subtitle": "我的作品集",
+    "description": "这里收集了我创造的各种数字作品 - 从移动应用到桌面工具，从网站到实验性项目。",
+    "about": {
+      "title": "关于创造者",
+      "content": "我是独立开发者，喜欢通过代码解决实际问题。我的兴趣广泛，从移动应用到桌面工具，从网页设计到系统优化。我相信好的软件应该优雅、实用且令人愉悦。",
+      "additional": "我的作品大多源于个人需求或好奇心驱使。每个项目都是学习新技术、探索新想法和解决实际问题的过程。"
+    },
+    "contact": {
+      "email": "hello@myworks.dev",
+      "title": "联系我",
+      "description": "如果您对我的作品感兴趣，或者有合作想法，欢迎联系："
+    },
+    "copyright": "© 2023 我的数字作品集. 托管于 GitHub Pages."
+  },
+  "colors": {
+    "primary": "#2C3E50",
+    "primaryLight": "#4A6582",
+    "secondary": "#E74C3C",
+    "tertiary": "#3498DB",
+    "accent": "#1ABC9C",
+    "dark": "#1A1A1A",
+    "gray": "#7F8C8D",
+    "light": "#F8F9FA",
+    "cardBg": "rgba(255, 255, 255, 0.95)",
+    "transition": "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1)"
+  },
+  "social": {
+    "github": "https://github.com/yourusername",
+    "twitter": "https://twitter.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername",
+    "email": "mailto:hello@myworks.dev"
+  },
+  "techStack": {
+    "title": "技术栈",
+    "description": "我使用多种技术和工具来构建项目：",
+    "technologies": "Swift, Kotlin, JavaScript, React, Electron, Python, 以及更多..."
+  },
+  "navigation": {
+    "works": "作品",
+    "about": "关于",
+    "contact": "联系"
+  },
+  "filters": {
+    "all": "全部",
+    "mobile": "移动应用",
+    "desktop": "桌面应用",
+    "web": "网站",
+    "tool": "工具"
+  },
+  "typewriter": {
+    "texts": [
+      "移动应用开发",
+      "桌面应用开发",
+      "Web 开发",
+      "工具开发",
+      "创意编程"
+    ]
+  }
+}
