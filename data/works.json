@@ -1,0 +1,129 @@
+[
+    {
+        "id": "mindful-moments",
+        "name": "Mindful Moments",
+        "type": "mobile",
+        "icon": "fas fa-brain",
+        "description": "一款极简的每日正念和冥想应用，帮助你专注于当下。",
+        "longDescription": "Mindful Moments 是我为了应对数字时代的信息过载而开发的应用。它提供每日简短的正念练习、呼吸引导和情绪记录功能。应用设计遵循极简主义原则，去除所有不必要的干扰，帮助用户真正专注于当下。<br><br>这个项目让我深入探索了移动应用的心理健康设计原则，以及如何通过简约的交互创造平静的用户体验。",
+        "tech": ["SwiftUI", "HealthKit", "CloudKit", "Core Data"],
+        "features": [
+            "每日个性化正念练习",
+            "呼吸节奏可视化引导",
+            "情绪和感恩日记",
+            "极简无干扰界面设计",
+            "健康数据集成与隐私保护"
+        ],
+        "platforms": ["iOS"],
+        "links": {
+            "appstore": "https://apps.apple.com/app/id123456789",
+            "website": "https://mindful.example.com"
+        },
+        "featured": true
+    },
+    {
+        "id": "code-canvas",
+        "name": "Code Canvas",
+        "type": "desktop",
+        "icon": "fas fa-code",
+        "description": "面向创意编码的可视化编程环境，将代码转化为艺术。",
+        "longDescription": "Code Canvas 是一个为创意编码者设计的 macOS 应用，它结合了代码编辑器和实时可视化预览。用户可以用 JavaScript 或 Python 编写生成艺术、数据可视化或交互设计的代码，并立即看到结果。<br><br>这个项目源于我对创意编程和教育工具的兴趣。我想创造一个既能教学又能创作的环境，让编程变得更加直观和有趣。",
+        "tech": ["Electron", "React", "Node.js", "Canvas API", "Python"],
+        "features": [
+            "实时代码预览与热重载",
+            "内置图形库和示例项目",
+            "代码导出为图像或视频",
+            "交互式教程系统",
+            "社区作品分享平台"
+        ],
+        "platforms": ["macOS", "Windows"],
+        "links": {
+            "website": "https://codecanvas.example.com",
+            "github": "https://github.com/username/codecanvas"
+        },
+        "featured": true
+    },
+    {
+        "id": "vault-pass",
+        "name": "VaultPass",
+        "type": "tool",
+        "icon": "fas fa-lock",
+        "description": "本地优先的密码管理器，注重隐私和简洁性。",
+        "longDescription": "VaultPass 是一个设计简洁、注重隐私的密码管理工具。与云端密码管理器不同，VaultPass 采用本地优先的设计理念，所有数据都加密存储在用户自己的设备上。<br><br>这个项目让我深入了解了加密技术、本地存储和跨平台开发。我特别注重应用的性能和安全，确保即使在不连接互联网的情况下也能无缝使用。",
+        "tech": ["Flutter", "Dart", "SQLite", "AES-256", "Biometrics"],
+        "features": [
+            "本地加密存储，零数据上传",
+            "跨平台同步(通过用户自有设备)",
+            "生物识别解锁",
+            "密码生成与强度分析",
+            "简洁直观的用户界面"
+        ],
+        "platforms": ["iOS", "Android", "macOS", "Windows"],
+        "links": {
+            "github": "https://github.com/username/vaultpass",
+            "website": "https://vaultpass.example.com"
+        }
+    },
+    {
+        "id": "retro-arcade",
+        "name": "Retro Arcade",
+        "type": "web",
+        "icon": "fas fa-gamepad",
+        "description": "在浏览器中重温经典街机游戏的怀旧网站。",
+        "longDescription": "Retro Arcade 是一个完全在浏览器中运行的经典游戏集合网站。我重新实现了几个80-90年代的经典街机游戏，如俄罗斯方块、吃豆人和太空入侵者，使用现代Web技术但保留了原始的美学和感觉。<br><br>这个项目让我深入探索了HTML5 Canvas、游戏循环、物理模拟和像素艺术。每个游戏都经过精心调整，以在现代浏览器上提供流畅的体验，同时保持原始的挑战性和乐趣。",
+        "tech": ["HTML5 Canvas", "JavaScript", "WebGL", "Pixel Art"],
+        "features": [
+            "5个完全可玩的经典街机游戏",
+            "本地高分排行榜",
+            "响应式设计，支持移动设备",
+            "可自定义的控制设置",
+            "游戏历史与趣闻"
+        ],
+        "platforms": ["Web"],
+        "links": {
+            "website": "https://retroarcade.example.com",
+            "github": "https://github.com/username/retro-arcade"
+        }
+    },
+    {
+        "id": "daily-scribble",
+        "name": "Daily Scribble",
+        "type": "mobile",
+        "icon": "fas fa-pen-fancy",
+        "description": "鼓励每日创意写作的极简笔记应用。",
+        "longDescription": "Daily Scribble 是一个专注于减少阻力、鼓励每日写作习惯的笔记应用。它通过极简的界面、每日提示和写作统计来帮助用户建立并保持写作习惯。<br><br>这个项目的核心设计原则是 '减少摩擦' - 从打开应用到开始写作只需两次点击。我使用了原生iOS组件和自定义动画来创造流畅的书写体验。",
+        "tech": ["Swift", "UIKit", "Core Data", "iCloud"],
+        "features": [
+            "极简写作界面，零干扰",
+            "每日创意写作提示",
+            "写作统计与习惯跟踪",
+            "Markdown支持",
+            "iCloud同步与备份"
+        ],
+        "platforms": ["iOS"],
+        "links": {
+            "appstore": "https://apps.apple.com/app/id987654321"
+        }
+    },
+    {
+        "id": "audio-lab",
+        "name": "Audio Lab",
+        "type": "desktop",
+        "icon": "fas fa-wave-square",
+        "description": "用于音频处理和声音设计的实验性工具。",
+        "longDescription": "Audio Lab 是一个为音乐制作人、播客创作者和声音设计师开发的 macOS 音频处理工具。它提供了一系列独特的音频效果、可视化工具和实验性功能，让用户能够以创意方式处理声音。<br><br>这个项目让我深入了解了数字音频处理、实时音频分析和 macOS 音频框架。我特别注重创造直观的界面，让复杂的音频处理变得易于理解和操作。",
+        "tech": ["Swift", "AudioKit", "AVFoundation", "Metal"],
+        "features": [
+            "实时音频效果处理链",
+            "频谱和波形可视化",
+            "自定义音频效果构建器",
+            "音频文件批量处理",
+            "MIDI控制器支持"
+        ],
+        "platforms": ["macOS"],
+        "links": {
+            "website": "https://audiolab.example.com",
+            "github": "https://github.com/username/audio-lab"
+        }
+    }
+]
