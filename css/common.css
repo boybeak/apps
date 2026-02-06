@@ -1,4 +1,5 @@
 :root {
+    /* 默认颜色变量，将被 JavaScript 动态覆盖 */
     --primary: #2C3E50;
     --primary-light: #4A6582;
     --secondary: #E74C3C;
@@ -8,6 +9,16 @@
     --gray: #7F8C8D;
     --light: #F8F9FA;
     --card-bg: rgba(255, 255, 255, 0.95);
+    --body-bg: #f9f9f9;
+    --header-bg: rgba(255, 255, 255, 0.95);
+    --header-border: rgba(0, 0, 0, 0.08);
+    --mobile-menu-bg: white;
+    --mobile-menu-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    --card-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    --card-border: rgba(0, 0, 0, 0.08);
+    --screenshot-bg: #f0f2f5;
+    --sidebar-bg: white;
+    --sidebar-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
     --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
 }
 
@@ -19,7 +30,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f9f9f9;
+    background-color: var(--body-bg);
     color: var(--dark);
     line-height: 1.7;
     overflow-x: hidden;
@@ -45,9 +56,9 @@ header {
     z-index: 1000;
     padding: 24px 0;
     transition: var(--transition);
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: var(--header-bg);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    border-bottom: 1px solid var(--header-border);
 }
 
 header.scrolled {
@@ -59,6 +70,18 @@ header.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
 .logo {
@@ -130,10 +153,10 @@ header.scrolled {
     right: -100%;
     width: 300px;
     height: 100vh;
-    background-color: white;
+    background-color: var(--mobile-menu-bg);
     z-index: 2000;
     padding: 40px;
-    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--mobile-menu-shadow);
     transition: var(--transition);
     display: flex;
     flex-direction: column;
@@ -239,6 +262,32 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.6);
     font-size: 0.95rem;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--dark);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transform: scale(1.1);
+}
+
+:root.dark-theme .theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media (max-width: 768px) {

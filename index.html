@@ -115,10 +115,10 @@
             background-color: var(--card-bg);
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            box-shadow: var(--card-shadow);
             transition: var(--transition);
             position: relative;
-            border: 1px solid rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--card-border);
             display: flex;
             flex-direction: column;
         }
@@ -308,15 +308,23 @@
                     <span class="logo-dot"></span>
                 </a>
                 
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">作品</a></li>
-                    <li><a href="#about">关于</a></li>
-                    <li><a href="#contact">联系</a></li>
-                </ul>
-                
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">作品</a></li>
+                        <li><a href="#about">关于</a></li>
+                        <li><a href="#contact">联系</a></li>
+                    </ul>
+                    
+                    <div class="nav-actions">
+                        <button class="theme-toggle" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        
+                        <button class="mobile-menu-btn" id="mobileMenuBtn">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -464,6 +472,17 @@
         document.addEventListener('DOMContentLoaded', function() {
             loadConfig().then(() => {
                 applyIndexConfig();
+                // 配置加载完成后再初始化主题切换
+                if (typeof initThemeToggle === 'function') {
+                    initThemeToggle();
+                } else {
+                    console.log('initThemeToggle 函数未加载，稍后尝试');
+                    setTimeout(() => {
+                        if (typeof initThemeToggle === 'function') {
+                            initThemeToggle();
+                        }
+                    }, 100);
+                }
             });
             loadWorksData();
             initTypewriter();

@@ -122,7 +122,7 @@
         
         .screenshot {
             height: 200px;
-            background-color: #f0f2f5;
+            background-color: var(--screenshot-bg);
             border-radius: 15px;
             display: flex;
             align-items: center;
@@ -139,10 +139,10 @@
         }
         
         .detail-sidebar {
-            background-color: white;
+            background-color: var(--sidebar-bg);
             border-radius: 16px;
             padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+            box-shadow: var(--sidebar-shadow);
             height: fit-content;
         }
         
@@ -231,15 +231,23 @@
                 <span class="logo-dot"></span>
             </a>
             
-            <ul class="nav-links">
-                <li><a href="index.html">作品</a></li>
-                <li><a href="index.html#about">关于</a></li>
-                <li><a href="index.html#contact">联系</a></li>
-            </ul>
-            
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html">作品</a></li>
+                    <li><a href="index.html#about">关于</a></li>
+                    <li><a href="index.html#contact">联系</a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -331,7 +339,19 @@
         }
 
         document.addEventListener('DOMContentLoaded', function() {
-            loadConfig();
+            loadConfig().then(() => {
+                // 配置加载完成后再初始化主题切换
+                if (typeof initThemeToggle === 'function') {
+                    initThemeToggle();
+                } else {
+                    console.log('initThemeToggle 函数未加载，稍后尝试');
+                    setTimeout(() => {
+                        if (typeof initThemeToggle === 'function') {
+                            initThemeToggle();
+                        }
+                    }, 100);
+                }
+            });
             initNavScroll();
             initMobileMenu();
             loadWorksData();
