@@ -1,19 +1,19 @@
 {
   "site": {
-    "title": "我的数字作品",
-    "subtitle": "我的作品集",
-    "description": "这里收集了我创造的各种数字作品 - 从移动应用到桌面工具，从网站到实验性项目。",
+    "title": "boybeak",
+    "subtitle": "boybeak",
+    "description": "独立开发者 & 设计师，热爱 Swift 与简洁的工具设计。",
     "about": {
-      "title": "关于创造者",
-      "content": "我是独立开发者，喜欢通过代码解决实际问题。我的兴趣广泛，从移动应用到桌面工具，从网页设计到系统优化。我相信好的软件应该优雅、实用且令人愉悦。",
+      "title": "关于我",
+      "content": "我是 boybeak，一名独立开发者 & 设计师。热爱 Swift 与简洁的工具设计，专注于构建实用、优雅的 macOS 应用。欢迎通过 GitHub Issues 反馈问题或交流想法。",
       "additional": "我的作品大多源于个人需求或好奇心驱使。每个项目都是学习新技术、探索新想法和解决实际问题的过程。"
     },
     "contact": {
-      "email": "hello@myworks.dev",
+      "email": "GitHub Issues",
       "title": "联系我",
-      "description": "如果您对我的作品感兴趣，或者有合作想法，欢迎联系："
+      "description": "欢迎通过以下渠道反馈问题或交流想法："
     },
-    "copyright": "© 2023 我的数字作品集. 托管于 GitHub Pages."
+    "copyright": "© 2026 Beak"
   },
   "colors": {
     "primary": "#2C3E50",
@@ -25,50 +25,18 @@
     "gray": "#7F8C8D",
     "light": "#F8F9FA",
     "cardBg": "rgba(255, 255, 255, 0.95)",
-    "bodyBg": "#f9f9f9",
-    "headerBg": "rgba(255, 255, 255, 0.95)",
-    "headerBorder": "rgba(0, 0, 0, 0.08)",
-    "mobileMenuBg": "white",
-    "mobileMenuShadow": "-10px 0 30px rgba(0, 0, 0, 0.1)",
-    "cardShadow": "0 8px 25px rgba(0, 0, 0, 0.06)",
-    "cardBorder": "rgba(0, 0, 0, 0.08)",
-    "screenshotBg": "#f0f2f5",
-    "sidebarBg": "white",
-    "sidebarShadow": "0 10px 30px rgba(0, 0, 0, 0.06)",
-    "transition": "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1)"
-  },
-  "darkColors": {
-    "primary": "#34495E",
-    "primaryLight": "#5D6D7E",
-    "secondary": "#E74C3C",
-    "tertiary": "#3498DB",
-    "accent": "#1ABC9C",
-    "dark": "#ECF0F1",
-    "gray": "#BDC3C7",
-    "light": "#2C3E50",
-    "cardBg": "rgba(52, 73, 94, 0.95)",
-    "bodyBg": "#2C3E50",
-    "headerBg": "rgba(52, 73, 94, 0.95)",
-    "headerBorder": "rgba(255, 255, 255, 0.08)",
-    "mobileMenuBg": "#34495E",
-    "mobileMenuShadow": "-10px 0 30px rgba(0, 0, 0, 0.3)",
-    "cardShadow": "0 8px 25px rgba(0, 0, 0, 0.2)",
-    "cardBorder": "rgba(255, 255, 255, 0.08)",
-    "screenshotBg": "#34495E",
-    "sidebarBg": "#34495E",
-    "sidebarShadow": "0 10px 30px rgba(0, 0, 0, 0.2)",
     "transition": "all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1)"
   },
   "social": {
-    "github": "https://github.com/yourusername",
-    "twitter": "https://twitter.com/yourusername",
-    "linkedin": "https://linkedin.com/in/yourusername",
-    "email": "mailto:hello@myworks.dev"
+    "github": "https://github.com/boybeak",
+    "twitter": "https://twitter.com/boybeak",
+    "linkedin": "https://github.com/boybeak",
+    "email": "https://github.com/boybeak/InputSourceSimpleApp/issues"
   },
   "techStack": {
     "title": "技术栈",
-    "description": "我使用多种技术和工具来构建项目：",
-    "technologies": "Swift, Kotlin, JavaScript, React, Electron, Python, 以及更多..."
+    "description": "我专注于以下技术和工具来构建 macOS 应用：",
+    "technologies": "SwiftUI, Swift, macOS 原生开发, 以及更多..."
   },
   "navigation": {
     "works": "作品",
@@ -77,18 +45,15 @@
   },
   "filters": {
     "all": "全部",
-    "mobile": "移动应用",
-    "desktop": "桌面应用",
-    "web": "网站",
+    "desktop": "macOS",
     "tool": "工具"
   },
   "typewriter": {
     "texts": [
-      "移动应用开发",
-      "桌面应用开发",
-      "Web 开发",
-      "工具开发",
-      "创意编程"
+      "macOS 应用开发",
+      "SwiftUI · Swift",
+      "简洁 · 实用 · 优雅",
+      "独立开发者"
     ]
   }
 }

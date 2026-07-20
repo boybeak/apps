@@ -364,10 +364,7 @@
                     
                     <div class="filter-tabs">
                         <button class="filter-btn active" data-filter="all">全部</button>
-                        <button class="filter-btn" data-filter="mobile">移动应用</button>
-                        <button class="filter-btn" data-filter="desktop">桌面应用</button>
-                        <button class="filter-btn" data-filter="web">网站</button>
-                        <button class="filter-btn" data-filter="tool">工具</button>
+                        <button class="filter-btn" data-filter="desktop">macOS</button>
                     </div>
                 </div>
                 
@@ -508,7 +505,7 @@
                 // 类型标签类名
                 const typeClass = `work-type ${work.type}`;
                 const typeText = work.type === 'mobile' ? '移动应用' : 
-                                work.type === 'desktop' ? '桌面应用' : 
+                                work.type === 'desktop' ? 'macOS' : 
                                 work.type === 'web' ? '网站' : '工具';
                 
                 // 链接按钮
