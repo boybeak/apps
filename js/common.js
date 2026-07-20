@@ -63,6 +63,9 @@ function applyConfig() {
         mobileMenuLinks[1].textContent = config.navigation.about;
         mobileMenuLinks[2].textContent = config.navigation.contact;
     }
+    
+    // 初始化 Google Analytics
+    initGoogleAnalytics();
 }
 
 function initNavScroll() {
@@ -233,4 +236,24 @@ function applyThemeColors() {
     } else {
         console.error('颜色配置未找到');
     }
+}
+
+function initGoogleAnalytics() {
+    const gaId = config.googleAnalytics;
+    if (!gaId) return;
+    
+    // 避免重复加载
+    if (document.querySelector('script[src*="googletagmanager"]')) return;
+    
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
+    document.head.appendChild(script);
+    
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', gaId, {
+        page_path: window.location.pathname
+    });
 }
