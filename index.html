@@ -145,6 +145,12 @@
             opacity: 0.9;
         }
         
+        .work-icon-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+        
         .work-content {
             padding: 30px;
             flex: 1;
@@ -529,7 +535,7 @@
                 workCard.innerHTML = `
                     ${featuredBadge}
                     <div class="work-image">
-                        <i class="${work.icon}"></i>
+                        ${work.iconImage ? `<img src="${work.iconImage}" alt="${work.name}" class="work-icon-img">` : `<i class="${work.icon}"></i>`}
                     </div>
                     <div class="work-content">
                         <span class="${typeClass}">${typeText}</span>

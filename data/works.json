@@ -4,6 +4,7 @@
         "name": "InputSourceSimple",
         "type": "desktop",
         "icon": "fas fa-keyboard",
+        "iconImage": "images/input-source-simple.png",
         "description": "一款简洁的 macOS 菜单栏辅助工具，帮助用户在使用多输入法时快速识别当前所处的输入法状态。",
         "longDescription": "<strong>InputSourceSimple</strong> 是一款轻量级的 macOS 菜单栏应用，当鼠标悬停时自动显示当前输入法状态指示器。<br><br>当您在使用多个输入法时，是否经常忘记当前是哪个输入法？InputSourceSimple 能够通过跟随鼠标显示指示器的方式，让您一目了然地知道当前输入法状态。应用设计遵循极简主义原则，无 Dock 图标干扰，保持桌面整洁。<br><br>这个项目源于我个人在日常使用中频繁切换中英文输入法的痛点，希望通过一个轻量级的解决方案来提升工作效率。",
         "tech": ["SwiftUI", "Swift", "Combine", "AppKit"],
