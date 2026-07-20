@@ -339,22 +339,21 @@
         }
 
         document.addEventListener('DOMContentLoaded', function() {
+            initNavScroll();
+            initMobileMenu();
             loadConfig().then(() => {
-                // 配置加载完成后再初始化主题切换
                 if (typeof initThemeToggle === 'function') {
                     initThemeToggle();
                 } else {
-                    console.log('initThemeToggle 函数未加载，稍后尝试');
                     setTimeout(() => {
                         if (typeof initThemeToggle === 'function') {
                             initThemeToggle();
                         }
                     }, 100);
                 }
+                // 配置加载完成后才加载作品详情（因为需要 config.site.title）
+                loadWorksData();
             });
-            initNavScroll();
-            initMobileMenu();
-            loadWorksData();
         });
         
         // 获取URL参数
