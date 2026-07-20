@@ -493,13 +493,7 @@
                         
                         <h2>项目截图</h2>
                         <div class="screenshots">
-                            ${work.iconImage ? `<div class="screenshot"><img src="${work.iconImage}" alt="${work.name}" class="screenshot-img"></div>
-                            <div class="screenshot"><img src="${work.iconImage}" alt="${work.name}" class="screenshot-img"></div>
-                            <div class="screenshot"><img src="${work.iconImage}" alt="${work.name}" class="screenshot-img"></div>
-                            <div class="screenshot"><img src="${work.iconImage}" alt="${work.name}" class="screenshot-img"></div>` : `<div class="screenshot"><i class="${work.icon}"></i></div>
-                            <div class="screenshot"><i class="${work.icon}"></i></div>
-                            <div class="screenshot"><i class="${work.icon}"></i></div>
-                            <div class="screenshot"><i class="${work.icon}"></i></div>`}
+                            ${(work.screenshots || []).length > 0 ? work.screenshots.map(s => `<div class="screenshot"><img src="${s}" alt="${work.name} 截图" class="screenshot-img"></div>`).join('') : `<div class="screenshot"><i class="${work.icon}"></i></div>`}
                         </div>
                     </div>
                     

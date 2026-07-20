@@ -21,6 +21,9 @@
         "links": {
             "github": "https://github.com/boybeak/InputSourceSimpleApp"
         },
+        "screenshots": [
+            "images/iss-1.gif"
+        ],
         "featured": true
     }
 ]
